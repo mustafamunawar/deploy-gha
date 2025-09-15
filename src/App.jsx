@@ -8,7 +8,7 @@ import pic1jpg from "./assets/pic1.jpg"; // Import the logo image
 const App = () => {
     return (
         <div>
-          <h1 className="text-green-500 text-5xl">Subhanallah!</h1>
+          <h1 className="text-green-500 text-5xl">Bismillah!</h1>
           <h1 className="text-blue-500 text-5xl">deploy-gha</h1>
           <img src={pic1} alt="Pic1" /> {/* Use the imported pic1 here */}
         <img src={pic1jpg} alt="Pic1 JPG" /> {/* Use the imported pic1jpg here */}
