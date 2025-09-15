@@ -50,7 +50,7 @@ async function run() {
 
   // Start dev server
   const server = await ctx.serve({
-    port: 3078,
+    port: 3079,
     servedir: "dist",
   });
   const host = server.host || "localhost";
