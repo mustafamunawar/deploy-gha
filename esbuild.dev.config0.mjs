@@ -34,8 +34,8 @@ async function run() {
       "--watch",
     ],
     {
-      stdio: "inherit", // This will show Tailwind output in your terminal
-      // stdio: ["ignore", "ignore", "ignore"], // Hide all output Tried but not working.
+      // stdio: "inherit", // This will show Tailwind output in your terminal
+      stdio: ["inherit", "inherit", "ignore"], // Hide all output Tried but not working.
       shell: process.platform === "win32", // Needed for Windows compatibility
     }
   );

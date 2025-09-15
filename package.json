@@ -5,9 +5,9 @@
   "homepage": "https://octocat.github.io/deploy-ghp/",
   "scripts": {
     "dev": "cp ./index.html dist/index.html && cp -r public/* dist/ && node esbuild.dev.config0.mjs",
-    "devn": "node esbuild.dev.config0.mjs && cp ./index.html dist/index.html && cp -r public/* dist/",
-    "build": "node esbuild.prod.config1.mjs",
-    "predeploy": "npm run build && cp ./index.html build/index.html && cp -r public/* build/",
+    "buildx": "node esbuild.prod.config1.mjs",
+    "predeployx": "npm run build && cp ./index.html build/index.html && cp -r public/* build/",
+    "predeploy": "node esbuild.prod.config1.mjs && cp ./index.html build/index.html && cp -r public/* build/",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
